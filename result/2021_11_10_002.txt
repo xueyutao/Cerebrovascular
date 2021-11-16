@@ -1,0 +1,103 @@
+# 自适应+gcn+召回率和精确率    5种实验结果+最终结果
+
+# 个人+病史的结果
+Total time elapsed: 3.9794s
+              precision    recall  f1-score   support
+
+           0       0.11      0.14      0.12        87
+           1       0.92      0.90      0.91       953
+
+    accuracy                           0.84      1040
+   macro avg       0.52      0.52      0.52      1040
+weighted avg       0.85      0.84      0.84      1040
+
+[[ 12  75]
+ [ 95 858]]
+Test set results: loss= 0.4539 accuracy= 0.8365
+
+
+# 个人+抽血的结果
+Total time elapsed: 4.0549s
+              precision    recall  f1-score   support
+
+           0       0.93      0.95      0.94       953
+           1       0.31      0.23      0.26        87
+
+    accuracy                           0.89      1040
+   macro avg       0.62      0.59      0.60      1040
+weighted avg       0.88      0.89      0.89      1040
+
+[[908  45]
+ [ 67  20]]
+Test set results: loss= 0.3757 accuracy= 0.8923
+
+
+# 个人+服药的结果
+Total time elapsed: 3.8789s
+              precision    recall  f1-score   support
+
+           0       0.92      0.83      0.87       953
+           1       0.12      0.26      0.17        87
+
+    accuracy                           0.78      1040
+   macro avg       0.52      0.55      0.52      1040
+weighted avg       0.86      0.78      0.81      1040
+
+[[787 166]
+ [ 64  23]]
+Test set results: loss= 0.4783 accuracy= 0.7788
+
+
+# 个人+心电图的结果
+Total time elapsed: 3.7032s
+              precision    recall  f1-score   support
+
+           0       0.92      1.00      0.96       953
+           1       0.00      0.00      0.00        87
+
+    accuracy                           0.92      1040
+   macro avg       0.46      0.50      0.48      1040
+weighted avg       0.84      0.92      0.88      1040
+
+[[953   0]
+ [ 87   0]]
+Test set results: loss= 0.4251 accuracy= 0.9163
+
+
+# 个人+心彩的结果
+Total time elapsed: 3.9434s
+              precision    recall  f1-score   support
+
+           0       0.92      1.00      0.96       953
+           1       0.50      0.02      0.04        87
+
+    accuracy                           0.92      1040
+   macro avg       0.71      0.51      0.50      1040
+weighted avg       0.88      0.92      0.88      1040
+
+[[951   2]
+ [ 85   2]]
+Test set results: loss= 0.3860 accuracy= 0.9163
+
+Process finished with exit code 0
+
+
+# 全部特征的结果
+Total time elapsed: 4.1489s
+              precision    recall  f1-score   support
+
+           0       0.26      0.30      0.28        87
+           1       0.94      0.92      0.93       953
+
+    accuracy                           0.87      1040
+   macro avg       0.60      0.61      0.60      1040
+weighted avg       0.88      0.87      0.87      1040
+
+[[ 26  61]
+ [ 74 879]]
+Test set results: loss= 0.3983 accuracy= 0.8702
+
+
+
+
+
